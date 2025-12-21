@@ -14,6 +14,11 @@ URL:		https://www.ggzgamingzone.org/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source0:	http://ftp.ggzgamingzone.org/pub/ggz/%{version}/%{name}-%{version}.tar.bz2
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	libggz-devel = %{libggz_version}
 BuildRequires:	ggz-client-libs-devel = %{ggz_client_libs_version}
 Requires:	libggz = %{libggz_version}
